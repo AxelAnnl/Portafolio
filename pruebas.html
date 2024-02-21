@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CDN de la biblioteca de Iconify -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/textillate@0.4.1/assets/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Playpen Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+
+   <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="row">
+             <!-- PARTE IZQUIERDA -->
+            <div class="col-md-5" style="background-color: aqua; display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                
+               <div class="row" style="background-color: yellowgreen;">
+                    <p>sas</p>
+               </div>
+       
+                <ul class="row" style="background-color: blue;">
+                    <li><span class="iconify" data-icon="devicon:dotnetcore" data-inline="false" data-width="50" data-height="50"></span></li>
+                    <li><span class="iconify" data-icon="vscode-icons:file-type-js-official" data-inline="false" data-width="50" data-height="50"></span> </li>
+                    <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="50" data-height="50"></span></li>
+                    <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="50" data-height="50"></span></li>
+                    <li><span class="iconify" data-icon="vscode-icons:file-type-csharp" data-inline="false" data-width="50" data-height="50"></span></li>
+                    <li><span class="iconify" data-icon="vscode-icons:file-type-python" data-inline="false" data-width="50" data-height="50"></span></li>
+                </ul>
+ 
+
+            </div>
+            
+
+            <!-- PARTE DERECHA -->
+            <div class="col-md-7 description-section">   
+                <!-- SUPERIOR -->
+               <div class="row  ml-2 justify-content-center" style="height: 60vh;">
+                   
+                    <h1 id="nombre" class="d-flex align-items-end " style="height: 70%;">Axel Ann Fuentes Díaz</h1>
+                   
+                   
+                    <p id="general" class="text-justify">Desarrollador web apasionado por la creación de experiencias digitales únicas y atractivas. 
+                            Siempre busco aprender y aplicar las últimas tendencias en el desarrollo web para ofrecer productos de calidad y funcionales.
+                    </p>
+               </div>
+               <!-- INFERIOR -->
+                <div class="row  d-flex align-items-center  " style="height: 40vh; width: 100%;">
+
+                    <div class="col-md-5 habilidades">
+                        <div class="text-center" >
+                            <ul class="tlt lista">
+                                <h5 >Habilidades blandas</h5>
+                                <li >ASP.NET</li>
+                                <li >JavaScript</li>
+                                <li >HTML</li>
+                                <li >CSS</li>
+                                <li >C#</li>
+                                <li >PYTHON</li>
+                                <li >.NET</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 habilidades ">
+                        <div class="text-center" >
+                            <ul class="tlt lista">
+                                <h5>Habilidades tecnicas</h5>
+                                <li >Trabajo en equipo</li>
+                                <li >Comunicación</li>
+                                <li >Organizacion</li>
+                                <li >Autodidacta</li>
+                                <li >Dispuesto</li>
+                                <li >ksks</li>
+                                <li >Resolución de problemas</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <p>hola</p>
+    </section>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/letteringjs/jquery.lettering.js"></script>
+    <script src="node_modules/textillate/jquery.textillate.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+
+   <script>
+        $(document).ready(function() {
+            $('.tlt').textillate({ 
+                loop: true,
+                in: {
+                effect: 'bounceInRight',
+                },
+                out:{
+                effect: 'bounceOutLeft',
+                },
+                type: 'word'
+            });
+        });
+        
+
+   </script>
+    
+    
+</body>
+
+</html>

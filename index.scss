@@ -1,0 +1,21 @@
+$color-background: #d1d1d1;
+$color-accent: #818181;
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: $color-background;
+}
+
+.description-section, .image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column; /* Alinear elementos en una columna */
+}
+
+.image-section {
+    background-color: $color-accent; /* Color de fondo opcional para la sección de la imagen */
+}
