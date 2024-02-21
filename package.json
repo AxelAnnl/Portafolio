@@ -9,7 +9,7 @@
   "author": "Axel Ann",
   "license": "ISC",
   "dependencies": {
-    "letteringjs": "^0.7.0",
-    "textillate": "^0.4.1"
+    "letteringjs": "^0.6.1",
+    "textillate": "^0.4.0"
   }
 }
