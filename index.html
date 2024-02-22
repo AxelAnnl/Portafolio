@@ -407,9 +407,44 @@
         
         
     </section>
-    <section id="contacto">
-        <p>contacto</p>
+    <section id="contacto" class="container">
+        <!-- Dentro de la sección de "Envíame un Mensaje" -->
+<div class="col-md-6 contacto-section">
+    <h3 class="yo">Contacto</h3>
+    <p>¡Estoy aquí para escucharte! Si tienes alguna pregunta o propuesta, no dudes en ponerte en contacto.</p>
+
+    <!-- Botón para enviar un mensaje por WhatsApp con ícono -->
+    <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+        <input type="hidden" name="phone" value="+522482079479">
+        <button type="submit" class="btn btn-success btn-icon">
+            <i class="fab fa-whatsapp"></i> Enviar Mensaje por WhatsApp
+        </button>
+    </form>
+    
+
+    <!-- Separador -->
+    <hr class="my-3 bg-white">
+
+    <!-- Botón para enviar un correo electrónico con ícono -->
+    <a href="mailto:axelfuentes2802@gmail.com" class="btn btn-primary btn-icon">
+        <i class="far fa-envelope"></i> Enviar Correo Electrónico
+    </a>
+
+    <!-- Separador -->
+    <hr class="my-3 bg-white">
+
+    <!-- Botón para LinkedIn con ícono -->
+    <a href="https://www.linkedin.com/in/axel-fuentes-85710a2b3" target="_blank" class="btn btn-info btn-icon">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+
+    <!-- Información adicional o mensaje personalizado -->
+ 
+</div>
+
     </section>
+    
+    
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="node_modules/letteringjs/jquery.lettering.js"></script> -->
