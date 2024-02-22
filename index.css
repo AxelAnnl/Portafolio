@@ -139,4 +139,31 @@ section{
     margin-right: 3vw; /* Ajusta según tus necesidades */
     margin-top: 30px;
     margin-bottom: 30px;
+
+
+}
+
+
+
+/* Estilos para la sección de contacto */
+.contacto-section {
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para los botones */
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilo para los separadores */
+.hr-divider {
+    border-top: 1px solid #ffffff; /* Línea blanca */
+    margin: 15px 0;
 }
