@@ -1,25 +1,23 @@
-$(document).ready(function() {
-    var itemsSoft = $(".animated-item.soft");
-    var itemsTech = $(".animated-item.tech");
-    var duration = 1000;
-    var delay = 2000;
+// Reveal sections with a fade-in effect once they're visible
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.fade-in-section');
 
-    function animateItemsSoft(index) {
-        if (index < itemsSoft.length) {
-            itemsSoft.eq(index).fadeIn().delay(delay).fadeOut(0, function() {
-                animateItemsSoft(index + 1);
-            });
-        }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        sections.forEach(section => section.classList.add('is-visible'));
+        return;
     }
 
-    function animateItemsTech(index) {
-        if (index < itemsTech.length) {
-            itemsTech.eq(index).fadeIn().delay(delay).fadeOut(0, function() {
-                animateItemsTech(index + 1);
-            });
-        }
-    }
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
 
-    animateItemsSoft(100);
-    animateItemsTech(100);
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
+
